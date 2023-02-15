@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ship battle!</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="battelefield">
+        <div id="text_top" class="flex text-top">Растановка кораблей</div>
+        <div class="flex_outer">
+          <div class="field field-human">
+            <div id="field_human" class="ships"></div>
+          </div>
+
+          <div class="field field-computer" hidden>
+            <div id="field_computer" class="ships"></div>
+          </div>
+
+          <div id="instruction" class="instruction">
+            <div id="type_placement" class="type-placement-box">
+              <span class="link" data-target="random">Случайным образом</span
+              ><br />
+              <span class="link" data-target="manually"
+                >Метод перетаскивания</span
+              >
+            </div>
+            <div id="ship_collection" class="ships_collection" hidden>
+              <p>
+                Перетащить мышкой корабли на игровое поле. Для установки корабля
+                по вертикали, кликните по нему правой кнопкой мыши.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="service-row">
+          <div id="service_text" class="service-text"></div>
+          <button id="play" type="button" class="btn-play" hidden>PLAY</button>
+          <button
+            id="newgame"
+            type="button"
+            class="btn-play btn-newgame"
+            hidden
+          >
+            Продолжить
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <ul class="initial-ships" hidden>
+      <li>
+        <div id="fourdeck1" class="ship fourdeck"></div>
+        <div id="tripledeck1" class="ship tripledeck tripledeck1"></div>
+        <div id="tripledeck2" class="ship tripledeck2"></div>
+      </li>
+      <li>
+        <div id="doubledeck1" class="ship doubledeck"></div>
+        <div id="doubledeck2" class="ship doubledeck doubledeck2"></div>
+        <div id="doubledeck3" class="ship doubledeck doubledeck3"></div>
+      </li>
+      <li>
+        <div id="singledeck1" class="ship singledeck"></div>
+        <div id="singledeck2" class="ship singledeck singledeck2"></div>
+        <div id="singledeck3" class="ship singledeck singledeck3"></div>
+        <div id="singledeck4" class="ship singledeck singledeck4"></div>
+      </li>
+    </ul>
+  </body>
+</html>
